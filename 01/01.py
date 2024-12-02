@@ -17,13 +17,11 @@ right.sort()
 differences = []
 for num1, num2 in zip(left, right):
     differences.append(abs(num1 - num2))
-sum(differences)
+print(sum(differences))
 
 # 2. Count the number of times each value appears in the two lists and calculate a total similarity score.
 similarity_score = []
 for i in left:
     num_occurences = right.count(i)
     similarity_score.append(i * num_occurences)
-sum(similarity_score)
-
-
+print(sum(similarity_score))
